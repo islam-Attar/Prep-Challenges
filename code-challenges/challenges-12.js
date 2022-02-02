@@ -15,7 +15,7 @@
 // ------------------------
 
 const oddFiltration = (arr) => {
-  let oddArr = arr.filter((value) => value % 2 != 0);
+  let oddArr = arr.filter(value => value % 2 != 0);
   return oddArr;
 };
 
