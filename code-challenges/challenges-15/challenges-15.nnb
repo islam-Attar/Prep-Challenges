@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function equalizeArray(arr) {\n  let arrObj = {};\n  let maxCount = 0;\n  for (let num of arr) {\n      arrObj[num] = arrObj[num] + 1 || 1;\n  }\n  for (let value in arrObj) {\n      if (arrObj[value] > maxCount) {\n          maxCount = arrObj[value];\n      }\n  }\n  return (arr.length - maxCount);\n}"
             ],
             "outputs": []
         },
