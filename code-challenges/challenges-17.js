@@ -18,7 +18,7 @@ const recursionPattern = (int1, int2) => {
   var arr = [];
   var x = int1;
   var y = int2;
-  function x(x, y, arr) {
+  function fun(x, y, arr) {
     arr.push(x);
     if (x < 0) {
       let init = arr.length - 2;
@@ -29,10 +29,10 @@ const recursionPattern = (int1, int2) => {
       }
       return arr;
     }
-    return x(x - y, y, arr);
+    return fun(x - y, y, arr);
   }
 
-  return x(int1, int2, arr);
+  return fun(int1, int2, arr);
 };
 // -------------------------------------------------------------------------------------------------------
 
